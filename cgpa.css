@@ -1,0 +1,518 @@
+@import url('https://fonts.googleapis.com/css2?family=Knewave&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    background: rgb(255, 227, 227);
+}
+
+nav {
+    padding: 13px 55px;
+    display: grid;
+    place-items: left;
+}
+
+.logo {
+    font-size: 53px;
+    font-family: 'Knewave', cursive;
+    outline-width: 47px;
+    color: #F293FF;
+    opacity: 100%;
+    letter-spacing: 0.02px;
+    -webkit-text-stroke: 2px #000;
+}
+
+.cgpa-cal {
+    text-align: center;
+    font-size: 57px;
+    font-family: 'Righteous', cursive;
+    opacity: 100%;
+    color: #536daa;
+    letter-spacing: 2.02px;
+    -webkit-text-stroke: 0.7px #f00;
+    margin-top: 33px;
+}
+
+.box {
+    display: grid;
+    place-items: center;
+}
+
+form {
+    width: 1100px;
+    height: 1270px;
+    background: #fff;
+    box-shadow: 0px 0px 9px #d0cdcd;
+    margin-top: 35px;
+    border-radius: 8px;
+    margin-bottom: 199px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    padding: 84px 119px;
+}
+
+.cgpa {
+    display: grid;
+    grid-gap: 40px;
+}
+
+label {
+    font-size: 25px;
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+}
+
+input {
+    padding: 10px 14px;
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+    border: 2px solid #777171;
+    outline: none;
+    border-radius: 20px;
+}
+
+.semester {
+    display: grid;
+    grid-gap: 60px;
+    margin-top: 81px;
+}
+
+.sem {
+    color: #464545;
+    font-size: 22px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.btn {
+    display: grid;
+    place-items: center;
+}
+
+#calcu {
+    padding: 12px 26px;
+    font-size: 23px;
+    cursor: pointer;
+    background: rgb(171, 19, 214);
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    margin-top: -15px;
+    font-family: 'Rubik', sans-serif;
+    transition: transform 0.4s ease-in-out;
+    transition: .4s;
+}
+
+#calcu:hover {
+    transform: scale(1.06);
+    background: #000;
+}
+
+.footer {
+    height: 230px;
+    width: 100%;
+    background: #565256;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 36px;
+}
+
+.created {
+    display: grid;
+    grid-gap: 10px;
+}
+
+.head {
+    color: #fff;
+    font-size: 24px;
+    font-family: 'Rubik', sans-serif;
+    letter-spacing: 1px;
+}
+
+.head1 {
+    color: #fff;
+    font-size: 30px;
+    font-family: 'Rubik', sans-serif;
+    letter-spacing: 1px;
+}
+
+
+.link {
+    width: 0;
+}
+
+#icons {
+    font-size: 25px;
+    color: #fff;
+    padding: 7px;
+    border-radius: 50%;
+    background: transparent;
+    border: 2px solid #fff;
+    transition: transform 0.3s ease-in-out;
+    margin: 16px;
+}
+
+.result-box {
+    display: flex;
+    justify-content: center;
+    margin-top: 55px;
+}
+
+.cgpa-name {
+    font-size: 32px;
+    color: #323131;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+    margin: 7px;
+    font-weight: bold;
+}
+
+#result {
+    border: 4px solid #948f8f;
+    font-size: 22px;
+    color: #323131;
+    padding: 4px 45px;
+    background: transparent;
+    font-family: 'Roboto', sans-serif;
+    margin: 7px;
+}
+
+
+@media screen and (max-width:1122px) {
+    form {
+        width: 890px;
+    }
+
+    .flex {
+        padding: 84px 67px;
+    }
+
+    nav {
+        padding: 13px 16px;
+    }
+}
+
+@media screen and (max-width:910px) {
+    form {
+        width: 742px;
+    }
+
+    .flex {
+        padding: 84px 50px;
+    }
+
+    nav {
+        padding: 13px 16px;
+    }
+}
+
+@media screen and (max-width:756px) {
+    form {
+        width: 573px;
+    }
+
+    .flex {
+        padding: 84px 63px;
+    }
+
+    input {
+        width: 126px;
+    }
+
+    label {
+        font-size: 18px;
+    }
+
+    .cgpa-cal {
+        font-size: 47px;
+    }
+
+    .sem {
+        font-size: 18px;
+    }
+
+    nav {
+        padding: 13px 16px;
+    }
+}
+
+@media screen and (max-width:592px) {
+    form {
+        width: 444px;
+    }
+
+    .flex {
+        padding: 84px 31px
+    }
+
+    .sem {
+        font-size: 15px;
+    }
+
+    .semester {
+        display: grid;
+        grid-gap: 55px;
+        margin-top: 72px;
+    }
+
+    input {
+        width: 126px;
+    }
+
+    label {
+        font-size: 16px;
+    }
+
+    .cgpa-cal {
+        font-size: 40px;
+    }
+
+    .logo {
+        font-size: 45px;
+    }
+
+    .head1 {
+        font-size: 20px;
+    }
+
+    .head {
+        font-size: 18px;
+    }
+
+    #icons {
+        margin: 9px;
+    }
+
+    #calcu {
+        padding: 10px 8px;
+        font-size: 22px;
+    }
+
+    nav {
+        padding: 13px 16px;
+    }
+}
+
+@media screen and (max-width:462px) {
+    form {
+        width: 354px;
+    }
+
+    .flex {
+        padding: 84px 23px;
+    }
+
+    input {
+        width: 93px;
+    }
+
+    label {
+        font-size: 13px;
+    }
+
+    .sem {
+        font-size: 14px;
+    }
+
+    .semester {
+        display: grid;
+        grid-gap: 55px;
+        margin-top: 72px;
+    }
+
+    .cgpa-cal {
+        font-size: 34px;
+    }
+
+    .logo {
+        font-size: 36px;
+    }
+
+    .head1 {
+        font-size: 20px;
+    }
+
+    .head {
+        font-size: 16px;
+    }
+
+    #icons {
+        margin: 5px;
+        font-size: 17px;
+    }
+
+    #calcu {
+        padding: 10px 8px;
+        font-size: 22px;
+    }
+
+    .footer {
+        height: 200px;
+        padding: 0px 11px;
+    }
+
+    form {
+        margin-bottom: 154px;
+    }
+
+    nav {
+        padding: 13px 16px;
+    }
+
+    .cgpa-name {
+        font-size: 23px;
+    }
+
+    #result {
+        padding: 3px 38px;
+    }
+}
+
+@media screen and (max-width:370px) {
+    form {
+        width: 298px;
+        height: 1155px;
+    }
+
+    input {
+        width: 78px;
+        font-size: 13px;
+    }
+
+    label {
+        font-size: 12px;
+    }
+
+    .flex {
+        padding: 84px 10px;
+    }
+
+    .sem {
+        font-size: 13px;
+    }
+
+    .semester {
+        display: grid;
+        grid-gap: 55px;
+        margin-top: 64px;
+    }
+
+    .cgpa-cal {
+        font-size: 29px;
+    }
+
+    #icons {
+        margin: 0px;
+        font-size: 15px;
+    }
+
+    #calcu {
+        padding: 10px 7px;
+        font-size: 20px;
+    }
+
+    .footer {
+        height: 165px;
+        padding: 0px 11px;
+    }
+
+    form {
+        margin-bottom: 154px;
+    }
+
+    .head1 {
+        font-size: 18px;
+    }
+
+    .head {
+        font-size: 14px;
+    }
+
+    .cgpa-name {
+        font-size: 23px;
+    }
+
+    #result {
+        padding: 3px 38px;
+    }
+}
+
+@media screen and (max-width:310px) {
+    form {
+        width: 279px;
+        height: 1155px;
+    }
+
+    input {
+        width: 78px;
+        font-size: 13px;
+    }
+
+    label {
+        font-size: 11px;
+    }
+
+    .flex {
+        padding: 84px 10px;
+    }
+
+    .sem {
+        font-size: 12px;
+    }
+
+    .semester {
+        display: grid;
+        grid-gap: 55px;
+        margin-top: 64px;
+    }
+
+    .cgpa-cal {
+        font-size: 25px;
+    }
+
+    #icons {
+        margin: 0px;
+        font-size: 14px;
+    }
+
+    #calcu {
+        padding: 10px 7px;
+        font-size: 17px;
+    }
+
+    .footer {
+        height: 165px;
+        padding: 0px 11px;
+    }
+
+    form {
+        margin-bottom: 154px;
+    }
+
+    .head1 {
+        font-size: 16px;
+    }
+
+    .head {
+        font-size: 13px;
+    }
+
+    .cgpa-name {
+        font-size: 23px;
+    }
+
+    #result {
+        padding: 3px 38px;
+    }
+}

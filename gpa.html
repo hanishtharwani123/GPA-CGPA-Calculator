@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPA Calculator</title>
+    <link rel="stylesheet" href="gpa.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo">GradeGaze</div>
+        </nav>
+        <h1 class="gpa-cal">GPA Calculator</h1>
+
+        <div class="box">
+            <form id="card" onsubmit="gpa_calcultor(); return false">
+                <div class="flex">
+                    <div class="credits">
+                        <label for="cred">Enter your Credits</label>
+                        <input type="number" id="credit_no1" name="credit-no" placeholder="Credits" class="MyInput">
+                        <input type="number" id="credit_no2" name="credit-no" placeholder="Credits" class="MyInput">
+                        <input type="number" id="credit_no3" name="credit-no" placeholder="Credits" class="MyInput">
+                        <input type="number" id="credit_no4" name="credit-no" placeholder="Credits" class="MyInput">
+                        <input type="number" id="credit_no5" name="credit-no" placeholder="Credits" class="MyInput">
+                        <input type="number" id="credit_no6" name="credit-no" placeholder="Credits" class="MyInput">
+                        <input type="number" id="credit_no7" name="credit-no" placeholder="Credits" class="MyInput">
+                        <input type="number" id="credit_no8" name="credit-no" placeholder="Credits" class="MyInput">
+                        <input type="number" id="credit_no9" name="credit-no" placeholder="Credits" class="MyInput">
+                        <input type="number" id="credit_no10" name="credit-no" placeholder="Credits" class="MyInput">
+                    </div>
+                    <div class="grades">
+                        <label for="cred">Enter your Grades</label>
+                        <select name="grade-value" id="grade_value1">
+                            <option value="" class="default-reset">Grades</option>
+                            <option value="S">S</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                            <option value="D">D</option>
+                            <option value="E">E</option>
+                            <option value="F">F</option>
+                            <option value="N">N</option>
+                        </select>
+                        <select name="grade-value" id="grade_value2">
+                            <option value="" class="default-reset">Grades</option>
+                            <option value="S">S</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                            <option value="D">D</option>
+                            <option value="E">E</option>
+                            <option value="F">F</option>
+                            <option value="N">N</option>
+                        </select><select name="grade-value" id="grade_value3">
+                            <option value="" class="default-reset">Grades</option>
+                            <option value="S">S</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                            <option value="D">D</option>
+                            <option value="E">E</option>
+                            <option value="F">F</option>
+                            <option value="N">N</option>
+                        </select><select name="grade-value" id="grade_value4">
+                            <option value="" class="default-reset">Grades</option>
+                            <option value="S">S</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                            <option value="D">D</option>
+                            <option value="E">E</option>
+                            <option value="F">F</option>
+                            <option value="N">N</option>
+                        </select><select name="grade-value" id="grade_value5">
+                            <option value="" class="default-reset">Grades</option>
+                            <option value="S">S</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                            <option value="D">D</option>
+                            <option value="E">E</option>
+                            <option value="F">F</option>
+                            <option value="N">N</option>
+                        </select><select name="grade-value" id="grade_value6">
+                            <option value="" class="default-reset">Grades</option>
+                            <option value="S">S</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                            <option value="D">D</option>
+                            <option value="E">E</option>
+                            <option value="F">F</option>
+                            <option value="N">N</option>
+                        </select><select name="grade-value" id="grade_value7">
+                            <option value="" class="default-reset">Grades</option>
+                            <option value="S">S</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                            <option value="D">D</option>
+                            <option value="E">E</option>
+                            <option value="F">F</option>
+                            <option value="N">N</option>
+                        </select><select name="grade-value" id="grade_value8">
+                            <option value="" class="default-reset">Grades</option>
+                            <option value="S">S</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                            <option value="D">D</option>
+                            <option value="E">E</option>
+                            <option value="F">F</option>
+                            <option value="N">N</option>
+                        </select><select name="grade-value" id="grade_value9">
+                            <option value="" class="default-reset">Grades</option>
+                            <option value="S">S</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                            <option value="D">D</option>
+                            <option value="E">E</option>
+                            <option value="F">F</option>
+                            <option value="N">N</option>
+                        </select><select name="grade-value" id="grade_value10">
+                            <option value="" class="default-reset">Grades</option>
+                            <option valuS="S">S</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                            <option value="D">D</option>
+                            <option value="E">E</option>
+                            <option value="F">F</option>
+                            <option value="N">N</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="btn">
+                    <button id="calcu">CALCULATE</button>
+                </div>
+                <div class="result-box">
+                    <p class="gpa-name">GPA </p>
+                    <span id="result"></span>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="created">
+            <h1 class="head">❤️Created by,</h1>
+            <h1 class="head1">Hanish Tharwani</h1>
+        </div>
+        <div class="social">
+            <a href="https://github.com/hanishtharwani123" class="link"><i class="fa-brands fa-github"
+                    id="icons"></i></a>
+            <a href="https://twitter.com/TharwaniHanish" class="link"><i class="fa-brands fa-twitter"
+                    id="icons"></i></a>
+            <a href="https://www.linkedin.com/in/hanish-tharwani/" class="link"><i class="fa-brands fa-linkedin-in"
+                    id="icons"></i></i></a>
+        </div>
+    </div>
+    <!-- <script>
+        window.onload = function () {
+            document.querySelectorAll(".MyInput").value = "";
+            document.querySelectorAll("select") = 0;
+            console.log(inp);
+        };
+    </script> -->
+
+    <script src="gpa.js"></script>
+</body>
+
+</html>

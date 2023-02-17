@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css2?family=Knewave&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    background: rgb(255, 227, 227);
+}
+
+nav {
+    padding: 13px 55px;
+    display: grid;
+    place-items: left;
+}
+
+.logo {
+    font-size: 53px;
+    font-family: 'Knewave', cursive;
+    outline-width: 47px;
+    color: #F293FF;
+    opacity: 100%;
+    letter-spacing: 0.02px;
+    -webkit-text-stroke: 2px #000;
+}
+
+.gpa-cal {
+    text-align: center;
+    font-size: 57px;
+    font-family: 'Righteous', cursive;
+    opacity: 100%;
+    color: #8d878d;
+    letter-spacing: 2.02px;
+    -webkit-text-stroke: 0.7px #474343;
+    margin-top: 33px;
+}
+
+.box {
+    display: grid;
+    place-items: center;
+}
+
+form {
+    width: 1000px;
+    height: 1140px;
+    background: #fff;
+    box-shadow: 0px 0px 9px #d0cdcd;
+    margin-top: 35px;
+    border-radius: 8px;
+    margin-bottom: 199px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    padding: 84px 127px;
+}
+
+.credits {
+    display: grid;
+    grid-gap: 30px;
+}
+
+.grades {
+    display: grid;
+    grid-gap: 30px;
+}
+
+label {
+    font-size: 25px;
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+}
+
+input {
+    padding: 10px 14px;
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+    border: 2px solid #777171;
+    outline: none;
+    border-radius: 20px;
+}
+
+select {
+    padding: 10px 14px;
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+    border: 2px solid #777171;
+    outline: none;
+    border-radius: 20px;
+    background: #fff;
+    cursor: pointer;
+}
+
+.btn {
+    display: grid;
+    place-items: center;
+}
+
+#calcu {
+    padding: 12px 26px;
+    font-size: 23px;
+    cursor: pointer;
+    background: rgb(171, 19, 214);
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    margin-top: -36px;
+    font-family: 'Rubik', sans-serif;
+    transition: transform 0.4s ease-in-out;
+    transition: .4s;
+}
+
+#calcu:hover {
+    transform: scale(1.06);
+    background: #000;
+}
+
+.footer {
+    height: 230px;
+    width: 100%;
+    background: #565256;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 36px;
+}
+
+.created {
+    display: grid;
+    grid-gap: 10px;
+}
+
+.head {
+    color: #fff;
+    font-size: 24px;
+    font-family: 'Rubik', sans-serif;
+    letter-spacing: 1px;
+}
+
+.head1 {
+    color: #fff;
+    font-size: 30px;
+    font-family: 'Rubik', sans-serif;
+    letter-spacing: 1px;
+}
+
+
+.link {
+    width: 0;
+}
+
+#icons {
+    font-size: 25px;
+    color: #fff;
+    padding: 7px;
+    border-radius: 50%;
+    background: transparent;
+    border: 2px solid #fff;
+    transition: transform 0.3s ease-in-out;
+    margin: 16px;
+}
+
+.result-box {
+    display: flex;
+    justify-content: center;
+    margin-top: 55px;
+}
+
+.gpa-name {
+    font-size: 32px;
+    color: #323131;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+    margin: 7px;
+    font-weight: bold;
+}
+
+#result {
+    border: 4px solid #948f8f;
+    font-size: 22px;
+    color: #323131;
+    padding: 4px 45px;
+    background: transparent;
+    font-family: 'Roboto', sans-serif;
+    margin: 7px;
+}
+
+@media screen and (max-width:1090px) {
+    form {
+        width: 800px;
+    }
+
+    .flex {
+        padding: 84px 138px;
+    }
+}
+
+@media screen and (max-width:850px) {
+    form {
+        width: 670px;
+    }
+
+    .flex {
+        padding: 84px 80px;
+    }
+
+    nav {
+        padding: 13px 16px;
+    }
+}
+
+@media screen and (max-width:700px) {
+    form {
+        width: 540px;
+    }
+
+    .flex {
+        padding: 84px 87px;
+    }
+
+    input {
+        width: 156px;
+    }
+
+    label {
+        font-size: 18px;
+    }
+
+    .gpa-cal {
+        font-size: 45px;
+    }
+
+    nav {
+        padding: 13px 16px;
+    }
+}
+
+@media screen and (max-width:579px) {
+    form {
+        width: 430px;
+    }
+
+    .flex {
+        padding: 84px 67px;
+    }
+
+    input {
+        width: 126px;
+    }
+
+    select {
+        width: 126px;
+    }
+
+    label {
+        font-size: 16px;
+    }
+
+    .gpa-cal {
+        font-size: 37px;
+    }
+
+    .logo {
+        font-size: 41px;
+    }
+
+    .head1 {
+        font-size: 20px;
+    }
+
+    .head {
+        font-size: 18px;
+    }
+
+    #icons {
+        margin: 9px;
+    }
+
+    #calcu {
+        padding: 10px 8px;
+        font-size: 21px;
+    }
+
+    nav {
+        padding: 13px 16px;
+    }
+}
+
+@media screen and (max-width:441px) {
+    form {
+        width: 330px;
+    }
+
+    .flex {
+        padding: 84px 36px;
+    }
+
+    input {
+        width: 116px;
+    }
+
+    select {
+        width: 116px;
+    }
+
+    label {
+        font-size: 13px;
+    }
+
+    .gpa-cal {
+        font-size: 33px;
+    }
+
+    .logo {
+        font-size: 37px;
+    }
+
+    .head1 {
+        font-size: 18px;
+    }
+
+    .head {
+        font-size: 14px;
+    }
+
+    #icons {
+        margin: 2px;
+        font-size: 15px;
+    }
+
+    #calcu {
+        padding: 10px 8px;
+        font-size: 21px;
+    }
+
+    .footer {
+        height: 200px;
+        padding: 0px 10px
+    }
+
+    form {
+        margin-bottom: 154px;
+    }
+
+    nav {
+        padding: 13px 16px;
+    }
+
+    .cgpa-name {
+        font-size: 23px;
+    }
+
+    #result {
+        padding: 3px 38px;
+    }
+}
+
+@media screen and (max-width:339px) {
+    form {
+        width: 288px;
+    }
+
+    .flex {
+        padding: 84px 21px;
+    }
+
+    .gpa-cal {
+        font-size: 29px;
+    }
+
+    #icons {
+        margin: 0px;
+        font-size: 14px;
+    }
+
+    #calcu {
+        padding: 8px 3px;
+        font-size: 18px;
+    }
+
+    .footer {
+        height: 165px;
+        padding: 0px 9px;
+    }
+
+    form {
+        margin-bottom: 154px;
+    }
+
+    .head1 {
+        font-size: 15px;
+    }
+
+    .head {
+        font-size: 12px;
+    }
+
+    .cgpa-name {
+        font-size: 23px;
+    }
+
+    #result {
+        padding: 3px 38px;
+    }
+}
